@@ -14,12 +14,10 @@ int main() {
 
     printf("Collanz-Folge: Bitte gebe eine natürliche Zahl a_0 ein: ");
     scanf("%d", &a_n);
-    printf("Start: a_n: %d,\t\t\t length: %d\n", a_n, length);
 
     while (length < 3 || a_n > 1) {
         a_n = collatz(a_n);
         length++;
-        printf("DEBUG: a_n: %d,\t\t\t length: %d\n", a_n, length);
     }
 
     printf("Länge der Collatz Folge: %d\n", length);
