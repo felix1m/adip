@@ -1,0 +1,4 @@
+99 -> 26
+208 -> 14
+5436 -> 68
+Längste Collatz Folge bei a_0 = 871, mit Länge 179
