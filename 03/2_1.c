@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # test, ob vollkommen oder defizient
-
-=======
->>>>>>> 6607221af0f870b87775b49f8a6522958da9f9f1
 #include <stdio.h>
 #include <stdbool.h>
 
