@@ -1,8 +1,8 @@
 #include <stdio.h>
 void untprog1(int z){
     unsigned int mask = 01 << 31;
-    int i;
-    for(i=31; i>=0; i--) {
+    int i = 31;
+    while(i>=0) {
         if  ((z&mask) !=0)
             printf("1");
         else
@@ -10,6 +10,7 @@ void untprog1(int z){
         if((i%8==0) && mask!=1)
             printf(".");
         mask >>= 1;
+        i--;
     }
     printf("\n");
 }

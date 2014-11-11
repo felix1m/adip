@@ -1,4 +1,4 @@
-Rechnet eingabewert Decimalzahl in Binärzahl um. 4 Bytes
+Rechnet eingabewert Decimalzahl in Binärzahl um. 4 Bytes, getrennt durch Punkte 
 
 3: 00000000.00000000.00000000.00000011
 8: 00000000.00000000.00000000.00001000
