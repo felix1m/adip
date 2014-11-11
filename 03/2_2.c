@@ -1,3 +1,4 @@
+# Ausgabe aller vollkommenen Zahlen < n
 #include <stdio.h>
 #include <stdbool.h>
 

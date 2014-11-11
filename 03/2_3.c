@@ -1,3 +1,4 @@
+# Ausgabe aller defiziten Zahlen < n
 #include <stdio.h>
 #include <stdbool.h>
 

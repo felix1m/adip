@@ -1,3 +1,4 @@
+# test, ob vollkommen oder defizient
 #include <stdio.h>
 #include <stdbool.h>
 
