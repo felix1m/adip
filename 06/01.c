@@ -25,6 +25,9 @@ DoubleNode{
 DoubleNode *insertFirst(DoubleNode *head, double d){
 	struct DoubleNode *tmp;
 	tmp	= malloc(sizeof(DoubleNode));
+	if (tmp == NULL) {
+		//ERROR
+	}
 	tmp->value = d;
 	tmp->next = head;
 	return tmp;
@@ -65,10 +68,7 @@ DoubleNode *reverseDoubleListCon(DoubleNode *head){
 	cursor = head;
 	headnew = NULL;
 	while(cursor != NULL){
-		tmpnew = malloc(sizeof(DoubleNode));
-		tmpnew->value = cursor->value;
-		tmpnew->next = headnew;
-		headnew = tmpnew;
+		headnew = insertFirst(headnew, cursor->value)
 		cursor = cursor->next;
 	}
 	return headnew;
@@ -76,9 +76,8 @@ DoubleNode *reverseDoubleListCon(DoubleNode *head){
 
 // 1b)f)
 DoubleNode *reverseDoubleList(DoubleNode *head){
-	DoubleNode *cursor, *tmpnext, *tmpprev;
+	DoubleNode *cursor, *tmpnext, *tmpprev = NULL;
 	cursor = head;
-	tmpprev = NULL;
 	while(cursor != NULL){
 		tmpnext = cursor->next;
 		cursor->next = tmpprev;
@@ -89,6 +88,5 @@ DoubleNode *reverseDoubleList(DoubleNode *head){
 }
 
 int main(){
-
 	return 0;
 }
