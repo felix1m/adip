@@ -38,13 +38,15 @@ int main(int argc, char *argv[]) {
     int read;
     unsigned long len;
     read = getline(&buffer, &len, stdin);
-    if (-1 == read)
-        printf("No line read...\n");
+    if (-1 == read) {
+      printf("No line read...\n");
+      return -1;
+    }
 
     if (isPalindrome(buffer, read - 1)) {
-      printf("It's a palindrome!");
+      printf("It's a palindrome!\n");
     } else {
-      printf("It's not a palindrome!");
+      printf("It's not a palindrome!\n");
     }
 
     free(buffer);

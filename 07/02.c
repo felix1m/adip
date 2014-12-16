@@ -21,8 +21,7 @@ void printBestGrade(Student* students, unsigned int len) {
 
   printf("Beste note: \n");
 
-  for (int i = 0; i < len; ++i)
-  {
+  for (int i = 0; i < len; ++i) {
     tmp = students[i].note;
     if (tmp == max) {
       printf("Name: %s, Note: %f \n", students[i].name, students[i].note);
@@ -31,11 +30,9 @@ void printBestGrade(Student* students, unsigned int len) {
 }
 
 float averageGrade(Student* students, unsigned int len) {
-
   double sum = 0;
 
-  for (int i = 0; i < len; ++i)
-  {
+  for (int i = 0; i < len; ++i) {
     sum += students[i].note;
   }
 
@@ -49,8 +46,7 @@ int main(int argc, char *argv[]) {
   scanf("%d", &numStudents);
 
   Student* students = malloc(numStudents * sizeof(Student));
-  for (int i = 0; i < numStudents; ++i)
-  {
+  for (int i = 0; i < numStudents; ++i) {
     char name[30];
     float note;
 
@@ -75,5 +71,6 @@ int main(int argc, char *argv[]) {
   printf("Durchschnittsnote: %f\n", averageGrade(students, numStudents));
 
   free(students);
+
   return 0;
 }
